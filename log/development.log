@@ -85,3 +85,444 @@ Processing by Devise::RegistrationsController#new as HTML
 Completed 200 OK in 441ms (Views: 429.0ms | ActiveRecord: 0.5ms)
 
 
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddColumnToUser (20190727142106)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "name" varchar[0m
+  ↳ db/migrate/20190727142106_add_column_to_user.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "phone" number[0m
+  ↳ db/migrate/20190727142106_add_column_to_user.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "city" varchar[0m
+  ↳ db/migrate/20190727142106_add_column_to_user.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "country" varchar[0m
+  ↳ db/migrate/20190727142106_add_column_to_user.rb:6
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "username" varchar[0m
+  ↳ db/migrate/20190727142106_add_column_to_user.rb:7
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190727142106"]]
+  ↳ bin/rails:9
+  [1m[35m (260.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/users" for ::1 at 2019-07-27 07:29:09 -0700
+Started GET "/users/sign_up" for ::1 at 2019-07-27 07:29:09 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/navin/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ikzGTOS86I0MrBaE3VKLE2fhQ+/geBAPBo0Sn8zuib6XDr9f70Np2N9F/m/DIWWOJzfBGMuD1PW17bZIfSdTKQ==", "user"=>{"email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/navin/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  ↳ /home/navin/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (26.2ms)
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (0.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 209ms (Views: 187.4ms | ActiveRecord: 0.7ms)
+
+
+Completed 200 OK in 222ms (Views: 170.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-07-27 07:29:39 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.1ms)
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-07-27 07:29:41 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-07-27 07:29:44 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-07-27 07:30:26 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-07-27 07:30:43 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-07-27 07:32:25 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (117.0ms)
+Completed 200 OK in 147ms (Views: 145.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-07-27 07:32:48 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 46ms (Views: 43.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-07-27 07:35:14 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-07-27 07:36:39 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-07-27 07:36:43 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-07-27 07:36:59 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 35ms (Views: 31.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-07-27 07:38:38 -0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 49ms (Views: 46.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-07-27 07:38:44 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-07-27 07:44:21 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.3ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 26ms (Views: 15.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-07-27 07:49:23 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (2.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (407.4ms)
+Completed 500 Internal Server Error in 419ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `country_select' for #<ActionView::Helpers::FormBuilder:0x00007f8b99ce99c0>):
+    26:   <div class="field">
+    27:     <%= f.label :country %><br />
+    28:     <%#= f.email_field :country, autofocus: true, autocomplete: "country" %>
+    29:     <%= f.country_select :country_code %>
+    30:   </div>
+    31: 
+    32:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:29:in `block in _app_views_devise_registrations_new_html_erb__1699678699361022941_70118778726600'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb__1699678699361022941_70118778726600'
+Started GET "/users/sign_up" for ::1 at 2019-07-27 07:49:53 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/navin/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.0ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `country_code' for #<User:0x000000000376ff68>
+Did you mean?  country):
+    26:   <div class="field">
+    27:     <%= f.label :country %><br />
+    28:     <%#= f.email_field :country, autofocus: true, autocomplete: "country" %>
+    29:     <%= f.country_select :country_code %>
+    30:   </div>
+    31: 
+    32:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:29:in `block in _app_views_devise_registrations_new_html_erb___1298428690067464387_30452260'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___1298428690067464387_30452260'
+Started GET "/users/sign_up" for ::1 at 2019-07-27 07:50:01 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (22.8ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `country_code' for #<User:0x0000000003b16c20>
+Did you mean?  country):
+    26:   <div class="field">
+    27:     <%= f.label :country %><br />
+    28:     <%#= f.email_field :country, autofocus: true, autocomplete: "country" %>
+    29:     <%= f.country_select :country_code %>
+    30:   </div>
+    31: 
+    32:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:29:in `block in _app_views_devise_registrations_new_html_erb___1298428690067464387_30975060'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___1298428690067464387_30975060'
+Started GET "/users/sign_up" for ::1 at 2019-07-27 07:52:38 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.9ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `country_code' for #<User:0x00007ff5bc276c58>
+Did you mean?  country_name):
+    26:   <div class="field">
+    27:     <%= f.label :country %><br />
+    28:     <%#= f.email_field :country, autofocus: true, autocomplete: "country" %>
+    29:     <%= f.country_select :country_code %>
+    30:   </div>
+    31: 
+    32:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:29:in `block in _app_views_devise_registrations_new_html_erb___1298428690067464387_70346700572960'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___1298428690067464387_70346700572960'
+Started GET "/users/sign_up" for ::1 at 2019-07-27 07:52:52 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/navin/.rvm/gems/ruby-2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.5ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `country_code' for #<User:0x0000000003c546f0>
+Did you mean?  country_name):
+    26:   <div class="field">
+    27:     <%= f.label :country %><br />
+    28:     <%#= f.email_field :country, autofocus: true, autocomplete: "country" %>
+    29:     <%= f.country_select :country_code %>
+    30:   </div>
+    31: 
+    32:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:29:in `block in _app_views_devise_registrations_new_html_erb__4139443565618465672_33094400'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb__4139443565618465672_33094400'
+Started GET "/users/sign_up" for ::1 at 2019-07-27 08:00:03 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (18.3ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `country_code' for #<User:0x0000000003d97b20>
+Did you mean?  country_name):
+    26:   <div class="field">
+    27:     <%= f.label :country %><br />
+    28:     <%#= f.email_field :country, autofocus: true, autocomplete: "country" %>
+    29:     <%= f.country_select :country_name %>
+    30:   </div>
+    31: 
+    32:   <div class="field">
+  
+app/models/user.rb:10:in `country_name'
+app/views/devise/registrations/new.html.erb:29:in `block in _app_views_devise_registrations_new_html_erb__4139443565618465672_32284800'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb__4139443565618465672_32284800'
+Started GET "/users/sign_up" for ::1 at 2019-07-27 08:00:08 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.6ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `country_code' for #<User:0x0000000004161940>
+Did you mean?  country_name):
+    26:   <div class="field">
+    27:     <%= f.label :country %><br />
+    28:     <%#= f.email_field :country, autofocus: true, autocomplete: "country" %>
+    29:     <%= f.country_select :country_name %>
+    30:   </div>
+    31: 
+    32:   <div class="field">
+  
+app/models/user.rb:10:in `country_name'
+app/views/devise/registrations/new.html.erb:29:in `block in _app_views_devise_registrations_new_html_erb__4139443565618465672_34313740'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb__4139443565618465672_34313740'
+Started GET "/users/sign_up" for ::1 at 2019-07-27 08:00:08 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (20.8ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `country_code' for #<User:0x00007f5318183f68>
+Did you mean?  country_name):
+    26:   <div class="field">
+    27:     <%= f.label :country %><br />
+    28:     <%#= f.email_field :country, autofocus: true, autocomplete: "country" %>
+    29:     <%= f.country_select :country_name %>
+    30:   </div>
+    31: 
+    32:   <div class="field">
+  
+app/models/user.rb:10:in `country_name'
+app/views/devise/registrations/new.html.erb:29:in `block in _app_views_devise_registrations_new_html_erb__4139443565618465672_69997431623660'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb__4139443565618465672_69997431623660'
+Started GET "/users/sign_up" for ::1 at 2019-07-27 08:00:09 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (16.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `country_code' for #<User:0x00007f53182e5000>
+Did you mean?  country_name):
+    26:   <div class="field">
+    27:     <%= f.label :country %><br />
+    28:     <%#= f.email_field :country, autofocus: true, autocomplete: "country" %>
+    29:     <%= f.country_select :country_name %>
+    30:   </div>
+    31: 
+    32:   <div class="field">
+  
+app/models/user.rb:10:in `country_name'
+app/views/devise/registrations/new.html.erb:29:in `block in _app_views_devise_registrations_new_html_erb__4139443565618465672_69997432363160'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb__4139443565618465672_69997432363160'
+Started GET "/users/sign_up" for ::1 at 2019-07-27 08:00:09 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (30.0ms)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `country_code' for #<User:0x00007f531846a6f0>
+Did you mean?  country_name):
+    26:   <div class="field">
+    27:     <%= f.label :country %><br />
+    28:     <%#= f.email_field :country, autofocus: true, autocomplete: "country" %>
+    29:     <%= f.country_select :country_name %>
+    30:   </div>
+    31: 
+    32:   <div class="field">
+  
+app/models/user.rb:10:in `country_name'
+app/views/devise/registrations/new.html.erb:29:in `block in _app_views_devise_registrations_new_html_erb__4139443565618465672_69997433144220'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb__4139443565618465672_69997433144220'
+Started PUT "/__web_console/repl_sessions/00848239ee38eecff52cece742c7158b" for ::1 at 2019-07-27 08:00:23 -0700
+Started PUT "/__web_console/repl_sessions/00848239ee38eecff52cece742c7158b" for ::1 at 2019-07-27 08:00:26 -0700
+Started PUT "/__web_console/repl_sessions/00848239ee38eecff52cece742c7158b" for ::1 at 2019-07-27 08:00:47 -0700
+Started PUT "/__web_console/repl_sessions/00848239ee38eecff52cece742c7158b" for ::1 at 2019-07-27 08:00:53 -0700
+Started PUT "/__web_console/repl_sessions/00848239ee38eecff52cece742c7158b" for ::1 at 2019-07-27 08:00:53 -0700
+Started GET "/users/sign_up" for ::1 at 2019-07-27 08:04:33 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.0ms)
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 225ms (Views: 214.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-07-27 08:05:05 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.1ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 25ms (Views: 23.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-07-27 08:05:07 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-07-27 08:05:07 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-07-27 08:05:38 -0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (3.7ms)
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (77.5ms)
+Completed 200 OK in 124ms (Views: 121.6ms | ActiveRecord: 0.0ms)
+
+
