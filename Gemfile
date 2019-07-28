@@ -37,7 +37,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 #Authentication
 gem 'devise'
-
+gem 'mini_magick'
+gem 'will_paginate'
 gem 'country_select', '~> 4.0'
 
 group :development, :test do
